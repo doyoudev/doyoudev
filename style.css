@@ -1,23 +1,78 @@
-body {font-family: Arial; font-size: 1em;margin:0; padding:0 40px 20px 40px;background: #234;color:#fff;}
+@import url(https://fonts.googleapis.com/css?family=Pragati+Narrow:400,700);
 
-h2,p,div,a {margin:0; padding:0;}
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Pragati Narrow', sans-serif;  */
+
+body {
+    font-family: Pragati Narrow;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0 40px 20px 40px;
+    background: #51A8FF;
+    color: #000;
+}
+
+h1,h2,h3,p,div,a {
+    margin: 0;
+    padding: 0;
+}
+
+header {background: #fff; padding: 20px 20px 30px 20px;}
+header h1, header h3{margin:0 20px; padding: 0;}
+header h1 {margin-bottom:-15px;}
+
+h2 {
+    font-size: 1.3em;
+    margin-top: 0;
+}
+
+.section-title{ 
+	background-color: #51A8FF;
+  padding: 0px 20px 0px 20px;
+  color: #fff;
+  max-width: 67%;
+	transform: skew(-20deg);
+  margin-left: -12px;
+}
+
+.section-title h2{ 
+  transform: skew(20deg);
+}
+
+.section-content{padding:0 60px 30px 20px;}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.title a { font-size:1.2em;
+    font-weight: 700;
+}
 
 
-h2 {font-size: 1.3em; margin-top: 0; text-decoration: underline;}
+.title p {   line-height: 1.2}
 
 
 
-.title {font-weight: 700; margin-top: 20px; margin-bottom: 5px;} /* margin-top: 20px; margin-bottom: 5px; */
+/*body > div:nth-child(2n+1) {background: #164AB1;}  /*#164AB1;*/
+/*body > div:nth-child(2n+1) {background: #1AA89C;} /*#1AA89C*/
+/*body > div:nth-child(2n+2) {background: #2F78A2;} /*#2F78A2*/
 
-p {margin-bottom: 1px}
+body > div {background: #fff;} 
 
-body > div {padding: 20px 20px}
+a {
+    color: #000;
+    text-decoration: none;
+}
 
-body > div:nth-child(3n+1) {background:#164AB1;}
+a:hover {
+    text-decoration: underline;
+}
 
-body > div:nth-child(3n+2) {background:#1AA89C;}
-
-body > div:nth-child(3n+3) {background:#2F78A2;}
-
-a {color:#fff;text-decoration: none; font-weight:bold; font-size:.96em;}
-a:hover {text-decoration:underline;};
+//a:before {
+    content: "\2022";
+    font-size: 12px;
+    vertical-align: middle;
+}
